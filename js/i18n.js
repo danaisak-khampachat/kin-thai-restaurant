@@ -45,6 +45,10 @@ const translations = {
         'highlights.vegDesc': 'A thoughtful range of plant-based Thai dishes, crafted with the same depth of flavour and care as every dish we serve.',
         'highlights.viewFull': 'View Full Menu',
 
+        // Gallery
+        'gallery.label': 'Our Restaurant',
+        'gallery.title': 'A Glimpse of Kin Thai',
+
         // Allergy
         'allergy.title': 'Your Safety is Our Priority',
         'allergy.desc': 'We take food allergies seriously. Our comprehensive Allergy Matrix is available for every dish, so you can dine with confidence. Please inform our staff of any dietary requirements.',
@@ -231,6 +235,10 @@ const translations = {
         'highlights.vegTitle': 'เมนูมังสวิรัติ',
         'highlights.vegDesc': 'เมนูมังสวิรัติไทยที่คัดสรรมาอย่างดี ปรุงด้วยความใส่ใจเท่าเทียมกับทุกเมนูที่เราเสิร์ฟ',
         'highlights.viewFull': 'ดูเมนูทั้งหมด',
+
+        // Gallery
+        'gallery.label': 'ร้านของเรา',
+        'gallery.title': 'บรรยากาศ Kin Thai',
 
         // Allergy
         'allergy.title': 'ความปลอดภัยของคุณคือสิ่งสำคัญ',
