@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kin Thai Restaurant Menu - Authentic Thai dishes with full allergy information. Seafood, beef, vegetarian options available.">
+    <title>Menu | Kin Thai Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-kin">KIN</span>
+                <span class="logo-thai">THAI</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="menu.html" class="nav-link active" data-i18n="nav.menu">Menu</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+                <li>
+                    <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+                        <span class="lang-en">🇬🇧 EN</span>
+                        <span class="lang-th" style="display:none;">🇹🇭 TH</span>
+                    </button>
+                </li>
+                <li><a href="https://rfrr.me/kinthainantwich" target="_blank" rel="noopener" class="nav-btn" data-i18n="nav.book">Book a Table</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <span class="section-label" data-i18n="menu.label">Our Menu</span>
+            <h1 class="page-title" data-i18n="menu.title">Discover Our Flavours</h1>
+            <p class="page-subtitle" data-i18n="menu.subtitle">Authentic Thai recipes passed down through generations, crafted with the finest ingredients</p>
+        </div>
+    </header>
+
+    <!-- Menu Filter -->
+    <section class="section menu-section">
+        <div class="container">
+            <div class="menu-filter">
+                <button class="filter-btn active" data-filter="all" data-i18n="menu.all">All</button>
+                <button class="filter-btn" data-filter="starters" data-i18n="menu.starters">Starters</button>
+                <button class="filter-btn" data-filter="soups" data-i18n="menu.soups">Soups</button>
+                <button class="filter-btn" data-filter="curries" data-i18n="menu.curries">Curries</button>
+                <button class="filter-btn" data-filter="stir-fry" data-i18n="menu.stirFry">Stir Fry</button>
+                <button class="filter-btn" data-filter="noodles" data-i18n="menu.noodles">Noodles & Rice</button>
+                <button class="filter-btn" data-filter="seafood" data-i18n="menu.seafood">Seafood</button>
+                <button class="filter-btn" data-filter="beef" data-i18n="menu.beef">Beef</button>
+                <button class="filter-btn" data-filter="vegetarian" data-i18n="menu.vegetarian">Vegetarian</button>
+                <button class="filter-btn" data-filter="desserts" data-i18n="menu.desserts">Desserts</button>
+            </div>
+
+            <!-- Starters -->
+            <div class="menu-category" data-category="starters">
+                <h2 class="category-title" data-i18n="menu.startersTitle">Starters</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Satay Chicken <span class="thai-name">ไก่สะเต๊ะ</span></h3>
+                            <span class="menu-price">£7.50</span>
+                        </div>
+                        <p class="menu-desc">Marinated chicken skewers served with peanut sauce and cucumber relish</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains peanuts">🥜 Peanuts</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Spring Rolls <span class="thai-name">ปอเปี๊ยะทอด</span></h3>
+                            <span class="menu-price">£6.50</span>
+                        </div>
+                        <p class="menu-desc">Crispy vegetable spring rolls with sweet chilli dipping sauce</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-veg">🌱 Vegetarian</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tom Yum Prawns <span class="thai-name">ต้มยำกุ้ง</span></h3>
+                            <span class="menu-price">£8.50</span>
+                        </div>
+                        <p class="menu-desc">Crispy prawns in a tangy tom yum glaze with fresh herbs</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains shellfish">🦐 Shellfish</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Fish Cakes <span class="thai-name">ทอดมันปลา</span></h3>
+                            <span class="menu-price">£7.00</span>
+                        </div>
+                        <p class="menu-desc">Thai fish cakes with red curry paste, green beans and kaffir lime leaves</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains fish">🐟 Fish</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Corn Cakes <span class="thai-name">ทอดมันข้าวโพด</span></h3>
+                            <span class="menu-price">£6.50</span>
+                        </div>
+                        <p class="menu-desc">Sweet corn fritters with curry paste, served with sweet chilli sauce</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-veg">🌱 Vegetarian</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Prawn Crackers <span class="thai-name">ข้าวเกรียบกุ้ง</span></h3>
+                            <span class="menu-price">£4.00</span>
+                        </div>
+                        <p class="menu-desc">Classic Thai prawn crackers with sweet chilli sauce</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains shellfish">🦐 Shellfish</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soups -->
+            <div class="menu-category" data-category="soups">
+                <h2 class="category-title" data-i18n="menu.soupsTitle">Soups</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tom Yum Goong <span class="thai-name">ต้มยำกุ้ง</span></h3>
+                            <span class="menu-price">£8.50</span>
+                        </div>
+                        <p class="menu-desc">Classic hot and sour prawn soup with lemongrass, galangal and lime leaves</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains shellfish">🦐 Shellfish</span>
+                            <span class="tag tag-spicy">🌶️ Spicy</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tom Kha Gai <span class="thai-name">ต้มข่าไก่</span></h3>
+                            <span class="menu-price">£7.50</span>
+                        </div>
+                        <p class="menu-desc">Coconut chicken soup with galangal, mushrooms and fresh lime</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-mild">Mild</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tom Jued <span class="thai-name">ต้มจืด</span></h3>
+                            <span class="menu-price">£7.00</span>
+                        </div>
+                        <p class="menu-desc">Clear soup with minced pork, tofu and vegetables</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-mild">Mild</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curries -->
+            <div class="menu-category" data-category="curries">
+                <h2 class="category-title" data-i18n="menu.curriesTitle">Curries</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Green Curry <span class="thai-name">แกงเขียวหวาน</span></h3>
+                            <span class="menu-price">£12.50</span>
+                        </div>
+                        <p class="menu-desc">Aromatic green curry with coconut milk, bamboo shoots, Thai aubergine and basil. Choice of chicken, beef, prawn or tofu</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-spicy">🌶️ Spicy</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Red Curry <span class="thai-name">แกงแดง</span></h3>
+                            <span class="menu-price">£12.50</span>
+                        </div>
+                        <p class="menu-desc">Rich red curry with coconut milk, bamboo shoots and Thai basil. Choice of protein</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-spicy">🌶️ Spicy</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Massaman Curry <span class="thai-name">แกงมัสมั่น</span></h3>
+                            <span class="menu-price">£13.50</span>
+                        </div>
+                        <p class="menu-desc">Slow-cooked Massaman curry with potatoes, onions and roasted peanuts. Choice of chicken or beef</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains peanuts">🥜 Peanuts</span>
+                            <span class="tag tag-mild">Mild</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Panang Curry <span class="thai-name">พะแนง</span></h3>
+                            <span class="menu-price">£12.50</span>
+                        </div>
+                        <p class="menu-desc">Thick and creamy Panang curry with kaffir lime leaves. Choice of chicken, beef or prawn</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains peanuts">🥜 Peanuts</span>
+                            <span class="tag tag-spicy">🌶️ Medium</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Yellow Curry <span class="thai-name">แกงกะหรี่</span></h3>
+                            <span class="menu-price">£12.00</span>
+                        </div>
+                        <p class="menu-desc">Mild yellow curry with potatoes, onions and coconut milk. Choice of protein</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-mild">Mild</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stir Fry -->
+            <div class="menu-category" data-category="stir-fry">
+                <h2 class="category-title" data-i18n="menu.stirFryTitle">Stir Fry</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Pad Kra Pao <span class="thai-name">ผัดกะเพรา</span></h3>
+                            <span class="menu-price">£12.00</span>
+                        </div>
+                        <p class="menu-desc">Stir-fried with holy basil, chilli and garlic. Served with jasmine rice and fried egg. Choice of protein</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-spicy">🌶️ Spicy</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Pad Cashew Nut <span class="thai-name">ผัดเม็ดมะม่วงหิมพานต์</span></h3>
+                            <span class="menu-price">£12.50</span>
+                        </div>
+                        <p class="menu-desc">Stir-fried with cashew nuts, dried chilli, onions and spring onions. Choice of protein</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains tree nuts">🌰 Tree Nuts</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Pad Prik Gaeng <span class="thai-name">ผัดพริกแกง</span></h3>
+                            <span class="menu-price">£12.00</span>
+                        </div>
+                        <p class="menu-desc">Stir-fried with red curry paste, green beans, kaffir lime leaves and Thai basil</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-spicy">🌶️ Spicy</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Ginger Stir Fry <span class="thai-name">ผัดขิง</span></h3>
+                            <span class="menu-price">£11.50</span>
+                        </div>
+                        <p class="menu-desc">Stir-fried with fresh ginger, mushrooms, onions and spring onions</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-mild">Mild</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noodles & Rice -->
+            <div class="menu-category" data-category="noodles">
+                <h2 class="category-title" data-i18n="menu.noodlesTitle">Noodles & Rice</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Pad Thai <span class="thai-name">ผัดไทย</span></h3>
+                            <span class="menu-price">£12.50</span>
+                        </div>
+                        <p class="menu-desc">Classic stir-fried rice noodles with tamarind sauce, egg, bean sprouts and crushed peanuts. Choice of chicken, prawn or tofu</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains peanuts">🥜 Peanuts</span>
+                            <span class="tag tag-allergy" title="Contains egg">🥚 Egg</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Pad See Ew <span class="thai-name">ผัดซีอิ๊ว</span></h3>
+                            <span class="menu-price">£12.00</span>
+                        </div>
+                        <p class="menu-desc">Stir-fried flat rice noodles with soy sauce, egg, Chinese broccoli. Choice of protein</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains soy">Soy</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Kin Thai Fried Rice <span class="thai-name">ข้าวผัดกินไทย</span></h3>
+                            <span class="menu-price">£11.50</span>
+                        </div>
+                        <p class="menu-desc">Our signature fried rice with egg, vegetables and special Kin Thai seasoning. Choice of protein</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains egg">🥚 Egg</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Pineapple Fried Rice <span class="thai-name">ข้าวผัดสับปะรด</span></h3>
+                            <span class="menu-price">£12.50</span>
+                        </div>
+                        <p class="menu-desc">Fragrant fried rice with pineapple, cashew nuts, raisins and curry powder</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains tree nuts">🌰 Tree Nuts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seafood Specials -->
+            <div class="menu-category" data-category="seafood">
+                <h2 class="category-title" data-i18n="menu.seafoodTitle">Seafood Specials</h2>
+                <div class="menu-grid">
+                    <div class="menu-item featured">
+                        <div class="menu-item-header">
+                            <h3>Kin Thai Seafood Platter <span class="thai-name">ชุดซีฟู้ดกินไทย</span></h3>
+                            <span class="menu-price">£28.00</span>
+                        </div>
+                        <p class="menu-desc">A sharing platter of prawns, squid, mussels and fish prepared in our signature style with Thai herbs</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-signature">⭐ Signature</span>
+                            <span class="tag tag-allergy" title="Contains shellfish">🦐 Shellfish</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Chu Chee Salmon <span class="thai-name">ฉู่ฉี่แซลมอน</span></h3>
+                            <span class="menu-price">£16.50</span>
+                        </div>
+                        <p class="menu-desc">Pan-seared salmon fillet topped with rich Chu Chee curry sauce and kaffir lime leaves</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains fish">🐟 Fish</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Garlic King Prawns <span class="thai-name">กุ้งกระเทียม</span></h3>
+                            <span class="menu-price">£15.50</span>
+                        </div>
+                        <p class="menu-desc">King prawns wok-fried with garlic, pepper and coriander root</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains shellfish">🦐 Shellfish</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tamarind Sea Bass <span class="thai-name">ปลากะพงซอสมะขาม</span></h3>
+                            <span class="menu-price">£17.50</span>
+                        </div>
+                        <p class="menu-desc">Crispy sea bass fillet with tangy tamarind sauce, topped with crispy shallots</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains fish">🐟 Fish</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beef Specials -->
+            <div class="menu-category" data-category="beef">
+                <h2 class="category-title" data-i18n="menu.beefTitle">Sirloin Beef Specials</h2>
+                <div class="menu-grid">
+                    <div class="menu-item featured">
+                        <div class="menu-item-header">
+                            <h3>Weeping Tiger <span class="thai-name">เสือร้องไห้</span></h3>
+                            <span class="menu-price">£16.50</span>
+                        </div>
+                        <p class="menu-desc">Grilled premium sirloin beef with spicy Jaew dipping sauce, served with sticky rice and fresh vegetables</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-signature">⭐ Signature</span>
+                            <span class="tag tag-spicy">🌶️ Spicy</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Beef Massaman <span class="thai-name">มัสมั่นเนื้อ</span></h3>
+                            <span class="menu-price">£14.50</span>
+                        </div>
+                        <p class="menu-desc">Slow-cooked sirloin beef in rich Massaman curry with potatoes and roasted peanuts</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains peanuts">🥜 Peanuts</span>
+                            <span class="tag tag-mild">Mild</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Beef Nam Tok <span class="thai-name">น้ำตกเนื้อ</span></h3>
+                            <span class="menu-price">£14.00</span>
+                        </div>
+                        <p class="menu-desc">Grilled beef salad with roasted rice, shallots, mint and chilli lime dressing</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-spicy">🌶️ Spicy</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Beef Pad Kra Pao <span class="thai-name">ผัดกะเพราเนื้อ</span></h3>
+                            <span class="menu-price">£14.00</span>
+                        </div>
+                        <p class="menu-desc">Premium sirloin stir-fried with holy basil, chilli and garlic, topped with a fried egg</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-spicy">🌶️ Spicy</span>
+                            <span class="tag tag-allergy" title="Contains egg">🥚 Egg</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vegetarian -->
+            <div class="menu-category" data-category="vegetarian">
+                <h2 class="category-title" data-i18n="menu.vegetarianTitle">Vegetarian Selection</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tofu Green Curry <span class="thai-name">แกงเขียวหวานเต้าหู้</span></h3>
+                            <span class="menu-price">£11.00</span>
+                        </div>
+                        <p class="menu-desc">Green curry with crispy tofu, bamboo shoots, Thai aubergine and sweet basil</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-veg">🌱 Vegan</span>
+                            <span class="tag tag-spicy">🌶️ Spicy</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Pad Thai Tofu <span class="thai-name">ผัดไทยเต้าหู้</span></h3>
+                            <span class="menu-price">£11.00</span>
+                        </div>
+                        <p class="menu-desc">Classic Pad Thai with tofu, bean sprouts and crushed peanuts</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-veg">🌱 Vegetarian</span>
+                            <span class="tag tag-allergy" title="Contains peanuts">🥜 Peanuts</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Vegetable Stir Fry <span class="thai-name">ผัดผักรวม</span></h3>
+                            <span class="menu-price">£10.00</span>
+                        </div>
+                        <p class="menu-desc">Seasonal vegetables wok-fried with garlic and oyster sauce (vegan sauce available)</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-veg">🌱 Vegetarian</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Morning Glory <span class="thai-name">ผักบุ้งไฟแดง</span></h3>
+                            <span class="menu-price">£9.50</span>
+                        </div>
+                        <p class="menu-desc">Stir-fried morning glory with chilli, garlic and yellow bean sauce</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-veg">🌱 Vegan</span>
+                            <span class="tag tag-spicy">🌶️ Spicy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-category" data-category="desserts">
+                <h2 class="category-title" data-i18n="menu.dessertsTitle">Desserts</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Mango Sticky Rice <span class="thai-name">ข้าวเหนียวมะม่วง</span></h3>
+                            <span class="menu-price">£7.50</span>
+                        </div>
+                        <p class="menu-desc">Sweet sticky rice with fresh mango and coconut cream</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-veg">🌱 Vegan</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Coconut Ice Cream <span class="thai-name">ไอศกรีมมะพร้าว</span></h3>
+                            <span class="menu-price">£6.00</span>
+                        </div>
+                        <p class="menu-desc">Homemade coconut ice cream with roasted peanuts</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains peanuts">🥜 Peanuts</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Banana Fritters <span class="thai-name">กล้วยทอด</span></h3>
+                            <span class="menu-price">£6.50</span>
+                        </div>
+                        <p class="menu-desc">Golden fried banana with honey drizzle and vanilla ice cream</p>
+                        <div class="menu-tags">
+                            <span class="tag tag-allergy" title="Contains gluten">Gluten</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sides -->
+            <div class="menu-category" data-category="sides" style="margin-top: 2rem;">
+                <h2 class="category-title">Sides</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Jasmine Rice <span class="thai-name">ข้าวสวย</span></h3>
+                            <span class="menu-price">£3.00</span>
+                        </div>
+                        <p class="menu-desc">Steamed Thai jasmine rice</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Sticky Rice <span class="thai-name">ข้าวเหนียว</span></h3>
+                            <span class="menu-price">£3.50</span>
+                        </div>
+                        <p class="menu-desc">Traditional Thai sticky rice</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Coconut Rice <span class="thai-name">ข้าวมะพร้าว</span></h3>
+                            <span class="menu-price">£3.50</span>
+                        </div>
+                        <p class="menu-desc">Fragrant coconut-infused jasmine rice</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Allergy Information -->
+    <section class="section allergy-section" id="allergy">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="allergy.matrixLabel">Food Safety</span>
+                <h2 class="section-title" data-i18n="allergy.matrixTitle">Allergy Information</h2>
+            </div>
+            <div class="allergy-info-card">
+                <div class="allergy-icon-large">⚠️</div>
+                <h3 data-i18n="allergy.infoTitle">Your Safety Matters</h3>
+                <p data-i18n="allergy.infoP1">At Kin Thai, we take food allergies very seriously. Our kitchen maintains a comprehensive <strong>Allergy Matrix</strong> for every dish on our menu.</p>
+                <p data-i18n="allergy.infoP2">Please inform your server of any allergies or dietary requirements when ordering. We are happy to adjust dishes where possible to accommodate your needs.</p>
+                <div class="allergy-legend">
+                    <h4 data-i18n="allergy.commonTitle">Common Allergens We Track:</h4>
+                    <div class="allergen-grid">
+                        <div class="allergen-item">🥜 Peanuts</div>
+                        <div class="allergen-item">🌰 Tree Nuts</div>
+                        <div class="allergen-item">🦐 Shellfish</div>
+                        <div class="allergen-item">🐟 Fish</div>
+                        <div class="allergen-item">🥚 Eggs</div>
+                        <div class="allergen-item">🥛 Dairy</div>
+                        <div class="allergen-item">🌾 Gluten</div>
+                        <div class="allergen-item">🫘 Soy</div>
+                        <div class="allergen-item">🌱 Celery</div>
+                        <div class="allergen-item">🟡 Mustard</div>
+                        <div class="allergen-item">🫛 Sesame</div>
+                        <div class="allergen-item">🫧 Sulphites</div>
+                        <div class="allergen-item">🐚 Molluscs</div>
+                        <div class="allergen-item">🌿 Lupin</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-kin">KIN</span>
+                        <span class="logo-thai">THAI</span>
+                    </div>
+                    <p data-i18n="footer.tagline">Modern Thai Dining in Nantwich</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/KinThaiRestaurant" target="_blank" rel="noopener" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/kinthai.nantwich" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer.services">Services</h4>
+                    <ul>
+                        <li><a href="https://rfrr.me/kinthainantwich" target="_blank" rel="noopener" data-i18n="footer.bookTable">Book a Table</a></li>
+                        <li><a href="https://deliveroo.co.uk" target="_blank" rel="noopener" data-i18n="footer.deliveroo">Order on Deliveroo</a></li>
+                        <li><a href="contact.html#private" data-i18n="footer.privateDining">Private Dining</a></li>
+                        <li><a href="menu.html#allergy" data-i18n="footer.allergyInfo">Allergy Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-i18n="footer.contactUs">Contact Us</h4>
+                    <p>Nantwich, Cheshire, England</p>
+                    <p><a href="mailto:kinthai.nantwich@gmail.com">kinthai.nantwich@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kin Thai Restaurant. <span data-i18n="footer.rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

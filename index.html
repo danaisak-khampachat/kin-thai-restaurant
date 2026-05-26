@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kin Thai Restaurant - Authentic modern Thai dining in the heart of Nantwich, England. Dine-in, Click & Collect, Delivery available.">
+    <meta name="keywords" content="Thai restaurant, Nantwich, Thai food, Kin Thai, dine-in, delivery, click and collect">
+    <title>Kin Thai Restaurant | Modern Thai Dining in Nantwich</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-kin">KIN</span>
+                <span class="logo-thai">THAI</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a></li>
+                <li><a href="menu.html" class="nav-link" data-i18n="nav.menu">Menu</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+                <li>
+                    <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+                        <span class="lang-en">🇬🇧 EN</span>
+                        <span class="lang-th" style="display:none;">🇹🇭 TH</span>
+                    </button>
+                </li>
+                <li><a href="https://rfrr.me/kinthainantwich" target="_blank" rel="noopener" class="nav-btn" data-i18n="nav.book">Book a Table</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Modern Thai Dining in Nantwich</p>
+            <h1 class="hero-title">
+                <span class="hero-kin">KIN</span>
+                <span class="hero-thai">THAI</span>
+            </h1>
+            <p class="hero-tagline" data-i18n="hero.tagline">Authentic Thai flavours, reimagined for you</p>
+            <div class="hero-cta">
+                <a href="https://rfrr.me/kinthainantwich" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="hero.book">Book a Table</a>
+                <a href="menu.html" class="btn btn-outline" data-i18n="hero.viewMenu">View Menu</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span data-i18n="hero.scroll">Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="section welcome" id="welcome">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="welcome.label">Welcome</span>
+                <h2 class="section-title" data-i18n="welcome.title">A Taste of Thailand in the Heart of England</h2>
+            </div>
+            <div class="welcome-grid">
+                <div class="welcome-text">
+                    <p data-i18n="welcome.p1">
+                        Born from a family legacy of Thai cooking spanning generations, Kin Thai Restaurant brings the authentic flavours of Thailand to Nantwich with a modern twist.
+                    </p>
+                    <p data-i18n="welcome.p2">
+                        Building on the beloved traditions of Aroi-Thai, we've created a dining experience that honours our heritage while embracing contemporary tastes — making Thai cuisine accessible and exciting for everyone.
+                    </p>
+                    <a href="about.html" class="link-arrow" data-i18n="welcome.readMore">Read our story →</a>
+                </div>
+                <div class="welcome-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🍽️</div>
+                        <h3 data-i18n="welcome.f1Title">Dine In</h3>
+                        <p data-i18n="welcome.f1Desc">Enjoy our warm, welcoming atmosphere with seating for up to 60 guests</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📦</div>
+                        <h3 data-i18n="welcome.f2Title">Click & Collect</h3>
+                        <p data-i18n="welcome.f2Desc">Order online and pick up your freshly prepared meal at your convenience</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛵</div>
+                        <h3 data-i18n="welcome.f3Title">Delivery</h3>
+                        <p data-i18n="welcome.f3Desc">Get Kin Thai delivered to your door via Deliveroo</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🥂</div>
+                        <h3 data-i18n="welcome.f4Title">Private Dining</h3>
+                        <p data-i18n="welcome.f4Desc">Host your special occasions with our private dining experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="section highlights">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="highlights.label">Our Specialities</span>
+                <h2 class="section-title" data-i18n="highlights.title">Signature Dishes</h2>
+            </div>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-img" style="background-image: url('https://images.unsplash.com/photo-1559314809-0d155014e29e?w=600&q=80')"></div>
+                    <div class="highlight-content">
+                        <h3 data-i18n="highlights.seafoodTitle">Seafood Collection</h3>
+                        <p data-i18n="highlights.seafoodDesc">Fresh seafood prepared with aromatic Thai herbs and spices, from classic Pad Thai prawns to our signature seafood platter.</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-img" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80')"></div>
+                    <div class="highlight-content">
+                        <h3 data-i18n="highlights.beefTitle">Sirloin Beef Specials</h3>
+                        <p data-i18n="highlights.beefDesc">Premium sirloin beef dishes infused with bold Thai flavours — from weeping tiger to rich Massaman curry.</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-img" style="background-image: url('https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&q=80')"></div>
+                    <div class="highlight-content">
+                        <h3 data-i18n="highlights.vegTitle">Vegetarian Selection</h3>
+                        <p data-i18n="highlights.vegDesc">A thoughtful range of plant-based Thai dishes, crafted with the same depth of flavour and care as every dish we serve.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="highlights-cta">
+                <a href="menu.html" class="btn btn-primary" data-i18n="highlights.viewFull">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Allergy Section -->
+    <section class="section allergy-banner">
+        <div class="container">
+            <div class="allergy-content">
+                <div class="allergy-icon">⚠️</div>
+                <div>
+                    <h3 data-i18n="allergy.title">Your Safety is Our Priority</h3>
+                    <p data-i18n="allergy.desc">We take food allergies seriously. Our comprehensive Allergy Matrix is available for every dish, so you can dine with confidence. Please inform our staff of any dietary requirements.</p>
+                    <a href="menu.html#allergy" class="link-arrow" data-i18n="allergy.link">View Allergy Information →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section class="section hours-section">
+        <div class="container">
+            <div class="hours-grid">
+                <div class="hours-info">
+                    <span class="section-label" data-i18n="hours.label">Visit Us</span>
+                    <h2 class="section-title" data-i18n="hours.title">Opening Hours</h2>
+                    <table class="hours-table">
+                        <tbody>
+                            <tr class="closed">
+                                <td data-i18n="hours.mon">Monday</td>
+                                <td data-i18n="hours.monTime">Closed</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="hours.tue">Tuesday</td>
+                                <td>12:00–15:00 / 17:00–22:00</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="hours.wed">Wednesday</td>
+                                <td>12:00–15:00 / 17:00–22:00</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="hours.thu">Thursday</td>
+                                <td>12:00–15:00 / 17:00–22:00</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="hours.fri">Friday</td>
+                                <td>12:00–15:00 / 17:00–22:00</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="hours.sat">Saturday</td>
+                                <td>12:00–22:00</td>
+                            </tr>
+                            <tr class="closed">
+                                <td data-i18n="hours.sun">Sunday</td>
+                                <td data-i18n="hours.sunTime">Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="hours-cta">
+                    <div class="cta-card">
+                        <h3 data-i18n="hours.bookTitle">Reserve Your Table</h3>
+                        <p data-i18n="hours.bookDesc">Book online through ResDiary for a seamless dining experience.</p>
+                        <a href="https://rfrr.me/kinthainantwich" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="hours.bookBtn">Book Now</a>
+                    </div>
+                    <div class="cta-card">
+                        <h3 data-i18n="hours.orderTitle">Order Online</h3>
+                        <p data-i18n="hours.orderDesc">Fancy Thai at home? Order via Deliveroo or Click & Collect.</p>
+                        <a href="https://deliveroo.co.uk" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="hours.orderBtn">Order on Deliveroo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment & Info -->
+    <section class="section info-bar">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4 data-i18n="info.payTitle">Payment Methods</h4>
+                    <p>Credit Card · Debit Card · Amex · Cash</p>
+                </div>
+                <div class="info-item">
+                    <h4 data-i18n="info.loyaltyTitle">Kin Thai Loyalty Card</h4>
+                    <p data-i18n="info.loyaltyDesc">Coming soon — earn rewards with every visit!</p>
+                </div>
+                <div class="info-item">
+                    <h4 data-i18n="info.privateTitle">Private Dining</h4>
+                    <p data-i18n="info.privateDesc">Up to 60 seats for your special occasions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-kin">KIN</span>
+                        <span class="logo-thai">THAI</span>
+                    </div>
+                    <p data-i18n="footer.tagline">Modern Thai Dining in Nantwich</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/KinThaiRestaurant" target="_blank" rel="noopener" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/kinthai.nantwich" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer.services">Services</h4>
+                    <ul>
+                        <li><a href="https://rfrr.me/kinthainantwich" target="_blank" rel="noopener" data-i18n="footer.bookTable">Book a Table</a></li>
+                        <li><a href="https://deliveroo.co.uk" target="_blank" rel="noopener" data-i18n="footer.deliveroo">Order on Deliveroo</a></li>
+                        <li><a href="contact.html#private" data-i18n="footer.privateDining">Private Dining</a></li>
+                        <li><a href="menu.html#allergy" data-i18n="footer.allergyInfo">Allergy Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-i18n="footer.contactUs">Contact Us</h4>
+                    <p>Nantwich, Cheshire, England</p>
+                    <p><a href="mailto:kinthai.nantwich@gmail.com">kinthai.nantwich@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kin Thai Restaurant. <span data-i18n="footer.rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
